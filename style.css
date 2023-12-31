@@ -22,3 +22,21 @@ div.slide {
   background-color: lightgray;
   transition: 0.5s;
 }
+ 
+div#arrows{
+  position: fixed;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div#arrows::before {
+  content: "<";
+  margin-left: 3rem;
+}
+
+div#arrows::after {
+  content: ">";
+  margin-right: 3rem;
+}
