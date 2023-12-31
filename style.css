@@ -22,3 +22,39 @@ div.slide {
   background-color: lightgray;
   transition: 0.5s;
 }
+
+div#previous {
+  position: fixed;
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+
+div#next {
+  position: fixed;
+  right: 0;
+  margin-right: 3rem;
+  font-size: 3rem;
+}
+
+div#navigation-dots {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  width: 400px;
+  left: calc(50vw - 200px);
+  top: calc(50% + 200px - 2rem);
+
+  input[type="checkbox"] {
+    appearance: none;
+    border-radius: 50%;
+    width: 1rem;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    opacity: 0.4;
+  }
+
+  input[type="checkbox"]:checked {
+    opacity: 1;
+  }
+}
