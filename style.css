@@ -10,6 +10,10 @@ body {
   overflow: hidden;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 div#slide-container {
   display: flex;
   width: 100%;
@@ -27,6 +31,7 @@ div#previous {
   position: fixed;
   margin-left: 3rem;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 div#next {
@@ -34,6 +39,7 @@ div#next {
   right: 0;
   margin-right: 3rem;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 div#navigation-dots {
@@ -45,16 +51,17 @@ div#navigation-dots {
   left: calc(50vw - 200px);
   top: calc(50% + 200px - 2rem);
 
-  input[type="checkbox"] {
+  input[type="radio"] {
     appearance: none;
     border-radius: 50%;
     width: 1rem;
     aspect-ratio: 1 / 1;
     background-color: white;
     opacity: 0.4;
+    cursor: pointer;
   }
 
-  input[type="checkbox"]:checked {
+  input[type="radio"]:checked {
     opacity: 1;
   }
 }
